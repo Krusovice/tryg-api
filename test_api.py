@@ -27,7 +27,7 @@ fetch_value(key,timestamp)
 # Inserting new value of key-timestamp
 new_item = {'key':'mykey', 'timestamp':102, 'value':'one_hundred_and_two'}
 resp = requests.put(f'{URL}/insert_replace_value', json=new_item)
-print('Replaced value for key:{new_item["key"]}, timestamp:{new_item["timestamp"]}')
+print(f'Replaced value for key:{new_item["key"]}, timestamp:{new_item["timestamp"]}')
 
 # Fetching value from newly inserted key-timestamp
 timestamp=102
